@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dommaraju Gopika | Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f6f9;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#0b3d91;
+      color:white;
+      padding:20px 0;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:40px;
+    }
+
+    header p{
+      margin-top:10px;
+      font-size:18px;
+    }
+
+    nav{
+      background:#06245c;
+      padding:12px;
+      text-align:center;
+      position:sticky;
+      top:0;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 20px;
+      font-size:18px;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:yellow;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+      background-size:cover;
+      background-position:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h2{
+      font-size:50px;
+      margin-bottom:20px;
+    }
+
+    .hero-content p{
+      font-size:22px;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 25px;
+      background:#ff9800;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#e68900;
+    }
+
+    section{
+      padding:60px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:36px;
+      color:#0b3d91;
+    }
+
+    .about{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:30px;
+    }
+
+    .about img{
+      width:280px;
+      border-radius:10px;
+    }
+
+    .about-text{
+      flex:1;
+      font-size:18px;
+    }
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+    }
+
+    .skill-box{
+      background:white;
+      padding:25px;
+      text-align:center;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .project-card{
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      font-size:20px;
+      margin:10px 0;
+    }
+
+    footer{
+      background:#06245c;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:30px;
+    }
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:30px;
+      }
+
+      .hero-content h2{
+        font-size:35px;
+      }
+
+      .hero-content p{
+        font-size:18px;
+      }
+
+      nav a{
+        display:block;
+        margin:10px 0;
+      }
+
+      .about{
+        flex-direction:column;
+        text-align:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Dommaraju Gopika</h1>
+    <p>B.Tech 3rd Year CSE Student | SV College of Engineering</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Hello, I'm Gopika</h2>
+      <p>Aspiring Software Developer & Web Designer</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+      <img src="c:\Users\User\Downloads\WhatsApp Image 2026-05-18 at 12.37.43 PM.jpeg" alt="Profile Image">
+
+      <div class="about-text">
+        <p>
+          My name is <b>Dommaraju Gopika</b>. 
+          I am pursuing <b>B.Tech 3rd Year in Computer Science Engineering</b> 
+          at <b>SV College of Engineering</b>.
+        </p>
+
+        <br>
+
+        <p>
+          I am interested in Web Development, Programming, 
+          and Software Technologies. I enjoy creating websites 
+          and learning new technologies to improve my skills.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills">
+
+      <div class="skill-box">
+        <h3>HTML</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>CSS</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>JavaScript</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>Python</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>C Programming</h3>
+      </div>
+
+      <div class="skill-box">
+        <h3>Java</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>College Website</h3>
+        <p>
+          Developed a responsive college website using HTML, CSS and JavaScript.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Personal Portfolio</h3>
+        <p>
+          Created a personal portfolio website to showcase skills and projects.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Student Login System</h3>
+        <p>
+          Designed a login page with student dashboard functionality.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact">
+      <p><b>Name:</b> Dommaraju Gopika</p>
+      <p><b>College:</b> SV College of Engineering</p>
+      <p><b>Course:</b> B.Tech CSE - 3rd Year</p>
+      <p><b>Email:</b> gopikadommaraju@gmail.com</p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Dommaraju Gopika | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
